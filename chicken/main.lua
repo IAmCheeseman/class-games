@@ -106,7 +106,7 @@ function love.draw()
   p2x, p2y = walk(p2x, p2y, math.pi)
 
   love.graphics.setColor(1, 0.5, 0)
-  love.graphics.rectangle("fill", p2x, p2y, 20, 10, 10)
+  love.graphics.rectangle("fill", p2x, p2y, 20, 10, 5)
 
   -- Body
   local offsety = (1 - currentSpeed) * walkDist
@@ -146,7 +146,7 @@ function love.draw()
   p1x, p1y = walk(p1x, p1y, 0)
 
   love.graphics.setColor(1, 0.5, 0)
-  love.graphics.rectangle("fill", p1x, p1y, 20, 10, 10)
+  love.graphics.rectangle("fill", p1x, p1y, 20, 10, 5)
 
   -- Draw ground
   love.graphics.setColor(0.20, 0.20, 0.20)
